@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "BuildMap",
+  "version": "1.0",
+  "description": "Choose a problem and a framework and populate a Google Doc",
+  "permissions": ["storage", "activeTab"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
