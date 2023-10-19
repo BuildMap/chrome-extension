@@ -1,37 +1,29 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>BuildMap</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>BuildMap</title>
 </head>
 <body>
-  <!-- Logo -->
-  <div id="logo">
-    <img src="media/BuildMap.png" alt="BuildMap Logo">
-  </div>
+    <div class="container">
+        <img src="media/BuildMap.svg" alt="BuildMap Logo">
+        <p class="choose-problem">Choose problem to tackle 👇</p>
+        <div class="dropdown">
+            <select>
+                <option value="" disabled selected>Select a problem</option>
+                <!-- Add options here -->
+            </select>
+        </div>
+        
+        <div class="info-card">
+            <p>Unable to choose a problem?</p>
+            <a href="#">How to use BuildMap?</a>
+        </div>
+        
+        <p class="footer-text">How to use BuildMap?</p>
+    </div>
 
-  <!-- Social Media Links -->
-  <div id="social-media">
-    <a href="#" target="_blank"><img src="media/LinkedIn.svg" alt="LinkedIn"></a>
-    <a href="#" target="_blank"><img src="media/Twitter.svg" alt="Twitter"></a>
-  </div>
-
-  <!-- Problem Dropdown -->
-  <div id="problem-section">
-    <label for="problem-dropdown">Choose a problem to tackle:</label>
-    <select id="problem-dropdown">
-      <option value="Retention">Retention</option>
-      <option value="Activation">Activation</option>
-    </select>
-  </div>
-
-  <!-- CTA Section -->
-  <div id="cta-section">
-    <p>Learn how to use BuildMap</p>
-    <a href="#" target="_blank">Click here for examples</a>
-  </div>
-
-  <script src="popup.js"></script>
 </body>
 </html>
