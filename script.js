@@ -153,6 +153,7 @@ let frameworks = {
 // Listen for dropdown changes and show frameworks
 document.getElementById('problemDropdown').addEventListener('change', function() {
     const selectedProblem = this.value;
+    document.getElementById('tutorial').style.display = 'block';
     displayFrameworks(selectedProblem);
 });
 
@@ -179,7 +180,8 @@ function displayFrameworks(problem) {
             copyButton.textContent = 'Use Framework';
             copyButton.addEventListener('click', function() {
                 copyToClipboard(frameworkDetails.content);
-                
+                showToast("Framework content copied!");
+
             });
             title.appendChild(copyButton);
 
@@ -203,13 +205,22 @@ function copyToClipboard(text) {
 
 
 function showToast(message) {
-    let toast = document.getElementById('toast');
-    let toastMessage = document.getElementById('toastMessage');
-    toastMessage.textContent = message;
+    // Check if a toast is already displayed and remove it if so
+    const existingToast = document.querySelector('.toast');
+    if (existingToast) {
+        document.body.removeChild(existingToast);
+    }
 
-    // Show the toast and hide after few seconds
-    toast.style.visibility = "visible";
+    const toast = document.createElement('div');
+    toast.className = 'toast';
+    toast.textContent = message;
+
+    document.body.appendChild(toast);
     setTimeout(() => {
-        toast.style.visibility = "hidden";
-    }, 4000); // Toast will disappear after 3 seconds
+        // Before removing, check if it still exists (in case another toast was shown and this one was removed)
+        if (document.body.contains(toast)) {
+            document.body.removeChild(toast);
+        }
+    }, 3000); // The toast will be removed after 3 seconds
 }
+

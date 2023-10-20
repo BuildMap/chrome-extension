@@ -117,5 +117,47 @@
             "desc": "A design process model for problem-solving.",
             "content": "- Discover: Start with a broad view of the problem. Example: Conduct user research or market analysis.\n- Define: Narrow down the problem into a clear statement. Example: Define the user pain points you want to solve.\n- Develop: Brainstorm and test solutions. Example: Create prototypes or mockups.\n- Deliver: Finalize the solution and launch. Example: Go through QA testing and release the product."
         }
-    ]
-}
+    ],
+    "lean_canvas": [
+        {
+            "title": "Lean Canvas",
+            "desc": "A 1-page business model for startups.",
+            "content": "- Problem: Identify the main challenges your target customers face.\n- Solution: Propose potential solutions to those problems.\n- Key Metrics: Determine the main metrics that will indicate the success of your venture.\n- Unique Value Proposition: Define the unique value your solution offers.\n- Unfair Advantage: Describe any advantage you have over competitors that can't be easily copied.\n- Channels: List how you'll deliver your solution to customers.\n- Customer Segments: Identify the primary groups of people or businesses you'll target.\n- Cost Structure: Break down the main costs associated with your business.\n- Revenue Streams: Detail how your business will earn revenue."
+        }
+    ],
+    "agile_methodology": [
+        {
+            "title": "Agile Methodology",
+            "desc": "A iterative approach to software development and project management.",
+            "content": "- User Stories: Define product features from a user's perspective.\n- Iterations: Work in short cycles, typically 1-4 weeks, called sprints or iterations.\n- Daily Stand-ups: Daily meetings to discuss progress and challenges.\n- Sprint Review: Evaluate the work at the end of each sprint.\n- Continuous Feedback: Regularly gather feedback to refine the product.\n- Adaptable: Adjust to changes quickly rather than strictly following a set plan.\n- Collaboration: Work closely with stakeholders, including customers and end-users."
+        }
+    ],
+    "design_thinking": [
+        {
+            "title": "Design Thinking",
+            "desc": "A human-centered approach to solving problems.",
+            "content": "- Empathize: Understand the users and their needs.\n- Define: Clearly articulate the problem you're trying to solve.\n- Ideate: Brainstorm a wide range of potential solutions.\n- Prototype: Create low-fidelity versions of your solutions to test and iterate.\n- Test: Get feedback on prototypes from users and stakeholders.\n- Iterate: Refine your solutions based on feedback and testing."
+        }
+    ],
+    "feature_prioritization": [
+        {
+            "title": "Feature Prioritization",
+            "desc": "Determine which features to develop based on impact and effort.",
+            "content": "- Impact vs Effort: Compare the potential impact of a feature against the effort required to implement it.\n- MoSCoW Method: Categorize features as Must have, Should have, Could have, or Won't have.\n- Value vs Complexity: Evaluate features based on the value they provide vs their complexity.\n- Stakeholder Feedback: Consider the opinions of key stakeholders, including users and business leaders.\n- Market Analysis: Understand market demand and competitor offerings."
+        }
+    ],
+    "okr_objectives_key_results": [
+        {
+            "title": "OKR (Objectives and Key Results)",
+            "desc": "Set and track objectives and their outcomes.",
+            "content": "- Objectives: Define what you want to achieve. They should be qualitative and inspiring.\n- Key Results: Quantitative measurements that indicate progress towards the objective.\n- Alignment: Ensure OKRs align with company vision and goals.\n- Time-bound: Typically set OKRs on a quarterly basis.\n- Check-ins: Regularly review progress toward OKRs.\n- Adaptability: Adjust OKRs as needed based on performance and changing circumstances."
+        }
+    ],
+    "five_whys_analysis": [
+        {
+            "title": "Five Whys Analysis",
+            "desc": "Root cause analysis by asking 'Why?' five times.",
+            "content": "- Identify Problem: Start with a clear description of the problem.\n- Ask Why: Ask 'Why did this happen?' to identify the cause.\n- Dig Deeper: For each answer, ask 'Why?' again until you've asked five times or identified the root cause.\n- Take Action: Once the root cause is identified, implement solutions to prevent recurrence.\n- Monitor: Track the results of your actions to ensure the problem is resolved."
+        }
+        ]
+    }

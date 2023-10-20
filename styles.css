@@ -5,7 +5,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #FFFCF5;
     width: 438px;
-    height: 490px;
+    height: 500px;
     padding: 0;
     margin: 17px;
     margin-right: -15px;
@@ -30,7 +30,7 @@ body {
 .dropdown {
     display: flex;
     width: 400px;
-    height: 40px;
+    height: 45px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -42,8 +42,8 @@ body {
 .dropdown select {
     width: 100%;
     height: 100%;
-    font-size: 12px;
-    padding: 11px;
+    font-size: 13px;
+    padding: 7px;
     color: #000;
     font-family: 'Poppins', sans-serif;
     background: transparent url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16"><path d="M3.204 5h9.592L8 10.481 3.204 5z"/></svg>') no-repeat;
@@ -57,7 +57,7 @@ body {
 
 .info-card {
     width: 400px;
-    height: 336px;
+    height: 320px;
     flex-shrink: 0;
     border-radius: 5px;
     border: 1px solid #FFE8B2;
@@ -109,9 +109,11 @@ body {
     display: flex;
     width: 212px;
     margin-top: -16px;
+    line-height: 1.23;
 }
 
 .framework-btn{
+    cursor: pointer;
     margin-top: 12px;
     margin-right: 8px;
     padding: 10px 8px;
@@ -123,27 +125,35 @@ body {
     align-items: left;
     font-weight: 700;
     width: 120px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.framework-btn:hover {
+    background-color: #FFB31A;  /* Slightly darker shade of the original color */
 }
 
-#toast {
-    visibility: hidden;
+.toast {
     max-width: 250px;
     height: auto;
     background-color: #333;
     color: #fff;
     text-align: center;
-    border-radius: 2px;
-    padding: 16px;
+    border-radius: 5px;
+    padding: 12px;
     position: fixed;
     z-index: 9999;
     left: 50%;
     bottom: 30px;
     transform: translateX(-50%);
-    font-size: 10px;
+    font-size: 11px;
     animation: fadeout 1s 3s forwards; /* It will hide after 3 seconds */
 }
 
 @keyframes fadeout {
     from { bottom: 30px; opacity: 1; }
     to { bottom: 0px; opacity: 0; }
+}
+
+#tutorial{
+    display: none;
+    margin: 10px;
 }
