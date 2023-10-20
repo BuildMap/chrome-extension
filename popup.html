@@ -11,7 +11,7 @@
         <img src="media/BuildMap.svg" alt="BuildMap Logo">
         <p class="choose-problem">Choose problem to tackle 👇</p>
         <div class="dropdown">
-            <select>
+            <select id="problemDropdown">
                 <option value="" disabled selected>Select a problem</option>
                 <option value="UnderstandingCustomerNeeds">Understanding Customer Needs</option>
                 <option value="FindingProductMarketFit">Finding Product-Market Fit</option>
@@ -50,6 +50,9 @@
                 <a href="#">How to use BuildMap?</a>
             </div>
         </div>
+    </div>
+    <div id="toast" class="toast">
+        <p id="toastMessage"></p>
     </div>
     <script src="script.js"></script>
 </body>
