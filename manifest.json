@@ -8,6 +8,8 @@
     "default_popup": "popup.html"
   },
   "icons": {
-    "16": "media/small16.svg"
+    "19": "media/19px MAP.png",
+    "48": "media/48px icon.png",
+    "128": "media/128px icon.png"
   }
 }

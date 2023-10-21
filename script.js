@@ -10,7 +10,7 @@ let problemsFrameworksLink = {
     "ImplementingAgileDevelopment": ["Product Squads"],
     "DesigningProducts": ["CIRCLES Method"],
     "SolvingProblems": ["CIRCLES Method", "Double Diamond"],
-    "StrategicPlanning": ["Business Model Canvas", "BCG Growth-Share Matrix", "Innovation of Diffusion"],
+    "StrategicPlanning": ["Business Model Canvas", "BCG Growth-Share Matrix", "Innovation of Diffusion","Product Team Competencies"],
     "BusinessModeling": ["Business Model Canvas"],
     "DevelopingTeamSkills": ["Product Team Competencies"],
     "SkillAssessment": ["Product Team Competencies"],
