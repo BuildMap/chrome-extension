@@ -1,33 +1,34 @@
 // Fetch data from JSON files
 let problemsFrameworksLink = {
-    "UnderstandingCustomerNeeds": ["Jobs to be Done"],
-    "FindingProductMarketFit": ["Jobs to be Done"],
-    "PrioritizingFeatures": ["Kano Model", "RICE Scoring Model"],
-    "ImprovingUserSatisfaction": ["Kano Model"],
-    "SettingGoals": ["North Star Framework"],
-    "AligningTeamEfforts": ["North Star Framework"],
-    "OrganizingTeams": ["Product Squads"],
-    "ImplementingAgileDevelopment": ["Product Squads"],
-    "DesigningProducts": ["CIRCLES Method"],
-    "SolvingProblems": ["CIRCLES Method", "Double Diamond"],
-    "StrategicPlanning": ["Business Model Canvas", "BCG Growth-Share Matrix", "Innovation of Diffusion","Product Team Competencies"],
-    "BusinessModeling": ["Business Model Canvas"],
-    "DevelopingTeamSkills": ["Product Team Competencies"],
-    "SkillAssessment": ["Product Team Competencies"],
-    "MakingDecisions": ["Weighted Scoring", "DACI"],
-    "PrioritizingOptions": ["Weighted Scoring"],
-    "AgilePlanning": ["GIST Planning Cycle"],
-    "ManagingTasks": ["GIST Planning Cycle"],
-    "TrackingCustomerBehavior": ["AARRR Pirate Metrics"],
-    "DataAnalytics": ["AARRR Pirate Metrics", "RFM Model"],
-    "PlanningForGrowth": ["BCG Growth-Share Matrix"],
-    "SegmentingCustomers": ["RFM Model"],
-    "UnderstandingMarketAdoption": ["Innovation of Diffusion"],
-    "AligningTeamRoles": ["DACI"],
-    "LongtermPlanning": ["The 3 Horizons Model"],
-    "FosteringInnovation": ["The 3 Horizons Model"],
-    "DesignThinking": ["Double Diamond"]
+    "UnderstandingCustomerNeeds": ["Jobs to be Done", "Business Model Canvas", "CIRCLES Method", "AARRR Pirate Metrics", "RFM Model", "Hook Model", "Lean Canvas", "SWOT Analysis"],
+    "FindingProductMarketFit": ["Jobs to be Done", "Business Model Canvas", "AARRR Pirate Metrics", "RFM Model", "Kano Model", "Value Proposition Canvas"],
+    "PrioritizingFeatures": ["Kano Model", "RICE Scoring Model", "Weighted Scoring", "Jobs to be Done", "Business Model Canvas", "Feature Prioritization"],
+    "ImprovingUserSatisfaction": ["Kano Model", "CIRCLES Method", "Double Diamond", "Business Model Canvas", "RFM Model", "User Story Mapping"],
+    "SettingGoals": ["North Star Framework", "The 3 Horizons Model", "GIST Planning Cycle", "Business Model Canvas", "AARRR Pirate Metrics", "Product Roadmap"],
+    "AligningTeamEfforts": ["North Star Framework", "DACI", "Business Model Canvas", "Jobs to be Done", "GIST Planning Cycle", "Scrum Framework"],
+    "OrganizingTeams": ["Product Squads", "North Star Framework", "The 3 Horizons Model", "Business Model Canvas", "Double Diamond", "Agile Framework"],
+    "ImplementingAgileDevelopment": ["Product Squads", "GIST Planning Cycle", "Jobs to be Done", "North Star Framework", "Weighted Scoring", "Scrum Framework"],
+    "DesigningProducts": ["CIRCLES Method", "Double Diamond", "Jobs to be Done", "Kano Model", "AARRR Pirate Metrics", "Persona Creation"],
+    "SolvingProblems": ["CIRCLES Method", "Double Diamond", "Kano Model", "Jobs to be Done", "Business Model Canvas", "Five Whys"],
+    "StrategicPlanning": ["Business Model Canvas", "BCG Growth-Share Matrix", "Innovation of Diffusion", "Product Team Competencies", "The 3 Horizons Model", "Blue Ocean Strategy"],
+    "BusinessModeling": ["Business Model Canvas", "Jobs to be Done", "AARRR Pirate Metrics", "RFM Model", "Kano Model", "Lean Canvas"],
+    "DevelopingTeamSkills": ["Product Team Competencies", "North Star Framework", "CIRCLES Method", "Double Diamond", "BCG Growth-Share Matrix", "Agile Framework"],
+    "SkillAssessment": ["Product Team Competencies", "The 3 Horizons Model", "RFM Model", "CIRCLES Method", "Kano Model", "User Story Mapping"],
+    "MakingDecisions": ["Weighted Scoring", "DACI", "RICE Scoring Model", "North Star Framework", "Business Model Canvas", "Five Whys"],
+    "PrioritizingOptions": ["Weighted Scoring", "RICE Scoring Model", "Kano Model", "Business Model Canvas", "AARRR Pirate Metrics", "Feature Matrix"],
+    "AgilePlanning": ["GIST Planning Cycle", "Jobs to be Done", "The 3 Horizons Model", "Business Model Canvas", "Product Squads", "Agile Framework"],
+    "ManagingTasks": ["GIST Planning Cycle", "Weighted Scoring", "Product Squads", "Jobs to be Done", "RICE Scoring Model", "Product Roadmap"],
+    "TrackingCustomerBehavior": ["AARRR Pirate Metrics", "RFM Model", "Jobs to be Done", "CIRCLES Method", "Kano Model", "Value Proposition Canvas"],
+    "DataAnalytics": ["AARRR Pirate Metrics", "RFM Model", "Business Model Canvas", "Innovation of Diffusion", "Jobs to be Done", "SWOT Analysis"],
+    "PlanningForGrowth": ["BCG Growth-Share Matrix", "Innovation of Diffusion", "The 3 Horizons Model", "Jobs to be Done", "Business Model Canvas", "Blue Ocean Strategy"],
+    "SegmentingCustomers": ["RFM Model", "AARRR Pirate Metrics", "Jobs to be Done", "Business Model Canvas", "Kano Model", "Persona Creation"],
+    "UnderstandingMarketAdoption": ["Innovation of Diffusion", "AARRR Pirate Metrics", "BCG Growth-Share Matrix", "Business Model Canvas", "Jobs to be Done", "Blue Ocean Strategy"],
+    "AligningTeamRoles": ["DACI", "Product Team Competencies", "Product Squads", "North Star Framework", "The 3 Horizons Model", "Scrum Framework"],
+    "LongtermPlanning": ["The 3 Horizons Model", "GIST Planning Cycle", "Business Model Canvas", "BCG Growth-Share Matrix", "Innovation of Diffusion", "Force Field Analysis"],
+    "FosteringInnovation": ["The 3 Horizons Model", "Double Diamond", "Innovation of Diffusion", "Jobs to be Done", "Business Model Canvas", "Hook Model"],
+    "DesignThinking": ["Double Diamond", "CIRCLES Method", "Kano Model", "Jobs to be Done", "AARRR Pirate Metrics", "Value Proposition Canvas"]
 }
+
 
 let frameworks = {
     "jobs_to_be_done": [
@@ -148,7 +149,113 @@ let frameworks = {
             "desc": "A design process model for problem-solving.",
             "content": "- Discover: Start with a broad view of the problem. Example: Conduct user research or market analysis.\n- Define: Narrow down the problem into a clear statement. Example: Define the user pain points you want to solve.\n- Develop: Brainstorm and test solutions. Example: Create prototypes or mockups.\n- Deliver: Finalize the solution and launch. Example: Go through QA testing and release the product."
         }
-    ]
+    ],
+
+"hook_model": [
+    {
+        "title": "Hook Model",
+        "desc": "Creating user habits through loops of triggers, actions, rewards, and investments.",
+        "content": "- Trigger: Identify what prompts the user to take action. Example: A notification alert.\n- Action: Define the action you want the user to take. Example: Opening the app.\n- Reward: Offer a reward for the action taken. Example: Getting a like on a post.\n- Investment: Encourage the user to invest time or resources. Example: Customizing a profile which makes the user more likely to return."
+    }
+],
+"lean_canvas": [
+    {
+        "title": "Lean Canvas",
+        "desc": "A 1-page business model for startups.",
+        "content": "- Problem: List the top problems you're solving.\n- Solution: Propose possible solutions for each problem.\n- Key Metrics: Identify metrics to measure success.\n- Unique Value Proposition: Determine what sets you apart.\n- Channels: List where you'll reach your customers.\n- Cost Structure: Understand your costs.\n- Revenue Streams: Identify sources of income.\n- Unfair Advantage: What's something unique you have that others don't?\n- Customer Segments: Define your target users or businesses."
+    }
+],
+"swot_analysis": [
+    {
+        "title": "SWOT Analysis",
+        "desc": "Analyzing strengths, weaknesses, opportunities, and threats.",
+        "content": "- Strengths: List what your product does well.\n- Weaknesses: Identify areas of improvement.\n- Opportunities: Spot external factors you can capitalize on.\n- Threats: Recognize external factors that could cause trouble."
+    }
+],
+"agile_framework": [
+    {
+        "title": "Agile Framework",
+        "desc": "Iterative and incremental approach to software development.",
+        "content": "- Sprints: Work in 1-2 week cycles.\n- Daily Standups: Daily meetings to discuss progress.\n- Backlog: Prioritize tasks and features.\n- Sprint Review: Reflect on work completed.\n- Sprint Retrospective: Discuss what went well and what needs improvement."
+    }
+],
+"user_story_mapping": [
+    {
+        "title": "User Story Mapping",
+        "desc": "Visualize product functionality from a user's perspective.",
+        "content": "- User Tasks: Identify main activities users will do.\n- Breakdown: Split tasks into detailed actions.\n- Prioritize: Decide the order of development based on importance.\n- Releases: Group tasks for different release versions."
+    }
+],
+"five_whys": [
+    {
+        "title": "Five Whys",
+        "desc": "Root cause analysis through iterative questioning.",
+        "content": "- Define Problem: Clearly state the issue.\n- Ask Why: Question why the problem exists.\n- Drill Down: Continue asking why until the root cause is identified, usually by the fifth why."
+    }
+],
+"product_roadmap": [
+    {
+        "title": "Product Roadmap",
+        "desc": "Visualize the evolution of a product over time.",
+        "content": "- Timeframe: Set short, medium, and long-term goals.\n- Features: List new functionalities and improvements.\n- Milestones: Mark significant events or releases.\n- Dependencies: Highlight if tasks depend on each other."
+    }
+],
+"persona_creation": [
+    {
+        "title": "Persona Creation",
+        "desc": "Build fictional characters to represent user types.",
+        "content": "- Demographics: Age, gender, job, etc.\n- Behaviors: How they act, preferences.\n- Needs & Goals: What they aim to achieve.\n- Pain Points: Challenges or problems they face."
+    }
+],
+"feature_prioritization": [
+    {
+        "title": "Feature Prioritization",
+        "desc": "Decide on what features to build next.",
+        "content": "- List Features: Detail all potential functionalities.\n- Value vs. Complexity: Rate each feature based on its value to users vs. development complexity.\n- User Feedback: Consider what users are requesting.\n- Business Impact: Reflect on potential ROI or alignment with company strategy."
+    }
+],
+"value_proposition_canvas": [
+    {
+        "title": "Value Proposition Canvas",
+        "desc": "Understand how your product fulfills user needs.",
+        "content": "- Customer Profile: Detail jobs, pains, and gains of your target user.\n- Value Map: List features, benefits, and the value your product offers.\n- Fit: Identify where features of your product align with user needs."
+    }
+],
+"scrum_framework": [
+    {
+        "title": "Scrum Framework",
+        "desc": "An agile process framework for iterative development.",
+        "content": "- Roles: Product owner, Scrum master, Development team.\n- Ceremonies: Sprint planning, Daily standup, Sprint review, Retrospective.\n- Artifacts: Product backlog, Sprint backlog, Increment."
+    }
+],
+"blue_ocean_strategy": [
+    {
+        "title": "Blue Ocean Strategy",
+        "desc": "Create uncontested market space and make competition irrelevant.",
+        "content": "- Eliminate: Decide what industry takes for granted should be eliminated.\n- Reduce: Identify which factors should be reduced below industry standards.\n- Raise: Determine which factors should be raised above industry standards.\n- Create: Find out what should be created that industry has never offered."
+    }
+],
+"feature_matrix": [
+    {
+        "title": "Feature Matrix",
+        "desc": "Compare features across multiple products or versions.",
+        "content": "- List Features: Enumerate all potential functionalities.\n- Compare Products: Rate each product based on the presence or absence of each feature.\n- User Preferences: Take into account the features most desired by users.\n- Versioning: Use the matrix to differentiate product versions or tiers."
+    }
+],
+"product_lifecycle": [
+    {
+        "title": "Product Lifecycle",
+        "desc": "Understand the stages a product goes through from introduction to decline.",
+        "content": "- Introduction: Launch and introduction to market.\n- Growth: Rapid increase in sales and user adoption.\n- Maturity: Sales stabilize and competition intensifies.\n- Decline: Sales drop, possibly due to new innovations or changing market conditions."
+    }
+],
+"force_field_analysis": [
+    {
+        "title": "Force Field Analysis",
+        "desc": "Analyze driving and restraining forces for change in a project.",
+        "content": "- Driving Forces: Factors that push for change or progress.\n- Restraining Forces: Factors that hinder or resist change.\n- Balance: Weigh the driving vs. restraining forces to decide if change is feasible or how to make it more so."
+    }
+]
 }
 // Listen for dropdown changes and show frameworks
 
