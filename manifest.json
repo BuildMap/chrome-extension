@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "BuildMap",
   "version": "1.0",
-  "description": "Choose a problem and a framework and populate a Google Doc",
+  "description": "No more aimless wandering—nail your projects with laser-focused precision! 🎯🚀",
   "permissions": ["storage", "activeTab"],
   "action": {
     "default_popup": "popup.html"
