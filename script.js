@@ -151,6 +151,29 @@ let frameworks = {
     ]
 }
 // Listen for dropdown changes and show frameworks
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Check if the form has been previously displayed using chrome.storage.local
+    chrome.storage.local.get(['tallyFormDisplayed'], function(result) {
+        
+        let formDisplayed = result.tallyFormDisplayed;
+
+        if (formDisplayed) {
+            // If the form was previously displayed, we'll show the main content
+            document.getElementById("tallyFormDiv").style.display = 'none';
+            document.getElementById("mainContent").style.display = 'block';
+        } else {
+            // If the form wasn't displayed before, show the form and the instruction
+            document.getElementById("tallyFormDiv").style.display = 'block';
+            // Set the form displayed flag using chrome.storage.local
+            chrome.storage.local.set({'tallyFormDisplayed': true});
+        }
+    });
+});
+
+
+
+
 document.getElementById('problemDropdown').addEventListener('change', function() {
     const selectedProblem = this.value;
     document.getElementById('tutorial').style.display = 'block';
@@ -159,6 +182,8 @@ document.getElementById('problemDropdown').addEventListener('change', function()
 
 function displayFrameworks(problem) {
     const container = document.querySelector('.info-card');
+    container.style.display = 'block';
+    document.querySelector('.empty-image').style.display='none';
     container.innerHTML = ''; // Clear existing cards
 
     const linkedFrameworks = problemsFrameworksLink[problem] || [];
