@@ -137,17 +137,18 @@ body,html {
     margin-right: 8px;
     padding: 10px 8px;
     border-radius: 5px;
-    background: #FFC63F;
+    background: #0047FF;
     font-family: Poppins, sans-serif;
     font-size: 12px;
     border: 0;
+    color: #fff;
     align-items: left;
     font-weight: 550;
     width: 120px;
     transition: background-color 0.3s, color 0.3s;
 }
 .framework-btn:hover {
-    background-color: #FFB31A;  /* Slightly darker shade of the original color */
+    background-color: #0041E9;  /* Slightly darker shade of the original color */
 }
 
 .toast {
