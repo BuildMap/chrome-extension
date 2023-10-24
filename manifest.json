@@ -3,7 +3,7 @@
   "name": "BuildMap",
   "version": "1.0",
   "description": "No more aimless wandering—nail your projects with laser-focused precision! 🎯🚀",
-  "permissions": ["storage", "activeTab"],
+  "permissions": ["storage"],
   "action": {
     "default_popup": "popup.html"
   },
